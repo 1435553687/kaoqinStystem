@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BEE36BFA-C4C7-4DCD-8BEE-761031E234F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KV_ISO15693</RootNamespace>
+    <AssemblyName>上班考勤管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\学信\学信\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db_PersonnelSignlnSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_PersonnelSignlnSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmApplicationForLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmApplicationForLeave.Designer.cs">
+      <DependentUpon>FrmApplicationForLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeleteCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeleteCard.Designer.cs">
+      <DependentUpon>FrmDeleteCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHairpin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHairpin.Designer.cs">
+      <DependentUpon>FrmHairpin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHome.Designer.cs">
+      <DependentUpon>FrmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLeaveSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLeaveSearch.Designer.cs">
+      <DependentUpon>FrmLeaveSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManagamentApplicationForLeave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManagamentApplicationForLeave.Designer.cs">
+      <DependentUpon>FrmManagamentApplicationForLeave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManagementHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManagementHome.Designer.cs">
+      <DependentUpon>FrmManagementHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManagementLeaveSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManagementLeaveSearch.Designer.cs">
+      <DependentUpon>FrmManagementLeaveSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManagementMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManagementMain.Designer.cs">
+      <DependentUpon>FrmManagementMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManagementMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManagementMeeting.Designer.cs">
+      <DependentUpon>FrmManagementMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManagementMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManagementMenu.Designer.cs">
+      <DependentUpon>FrmManagementMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManagementPunchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManagementPunchCard.Designer.cs">
+      <DependentUpon>FrmManagementPunchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManagementSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManagementSearch.Designer.cs">
+      <DependentUpon>FrmManagementSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManagementSerialPort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManagementSerialPort.Designer.cs">
+      <DependentUpon>FrmManagementSerialPort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMeeting.Designer.cs">
+      <DependentUpon>FrmMeeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessage.Designer.cs">
+      <DependentUpon>FrmMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPunchCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPunchCard.Designer.cs">
+      <DependentUpon>FrmPunchCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearch.Designer.cs">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSerialPort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSerialPort.Designer.cs">
+      <DependentUpon>FrmSerialPort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmwelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmwelcome.Designer.cs">
+      <DependentUpon>Frmwelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlHelper.cs" />
+    <EmbeddedResource Include="FrmApplicationForLeave.resx">
+      <DependentUpon>FrmApplicationForLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeleteCard.resx">
+      <DependentUpon>FrmDeleteCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHairpin.resx">
+      <DependentUpon>FrmHairpin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHome.resx">
+      <DependentUpon>FrmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLeaveSearch.resx">
+      <DependentUpon>FrmLeaveSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManagamentApplicationForLeave.resx">
+      <DependentUpon>FrmManagamentApplicationForLeave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManagementHome.resx">
+      <DependentUpon>FrmManagementHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManagementLeaveSearch.resx">
+      <DependentUpon>FrmManagementLeaveSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManagementMain.resx">
+      <DependentUpon>FrmManagementMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManagementMeeting.resx">
+      <DependentUpon>FrmManagementMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManagementMenu.resx">
+      <DependentUpon>FrmManagementMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManagementPunchCard.resx">
+      <DependentUpon>FrmManagementPunchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManagementSearch.resx">
+      <DependentUpon>FrmManagementSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManagementSerialPort.resx">
+      <DependentUpon>FrmManagementSerialPort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMeeting.resx">
+      <DependentUpon>FrmMeeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessage.resx">
+      <DependentUpon>FrmMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPunchCard.resx">
+      <DependentUpon>FrmPunchCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearch.resx">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSerialPort.resx">
+      <DependentUpon>FrmSerialPort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmwelcome.resx">
+      <DependentUpon>Frmwelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="db_PersonnelSignlnSystemDataSet.xsc">
+      <DependentUpon>db_PersonnelSignlnSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_PersonnelSignlnSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_PersonnelSignlnSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_PersonnelSignlnSystemDataSet.xss">
+      <DependentUpon>db_PersonnelSignlnSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KV_ISO15693\KV_ISO15693.csproj">
+      <Project>{eb8eed95-f9f0-4148-a3d9-410a511e4ad4}</Project>
+      <Name>KV_ISO15693</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PunchCard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\People.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Travel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\考勤.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\学校背景图.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\path.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Link.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conflict.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leave.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

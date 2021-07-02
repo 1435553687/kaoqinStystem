@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "上班考勤管理系统", "上班考勤管理系统.csproj", "{BEE36BFA-C4C7-4DCD-8BEE-761031E234F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KV_ISO15693", "..\KV_ISO15693\KV_ISO15693.csproj", "{EB8EED95-F9F0-4148-A3D9-410A511E4AD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEE36BFA-C4C7-4DCD-8BEE-761031E234F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE36BFA-C4C7-4DCD-8BEE-761031E234F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE36BFA-C4C7-4DCD-8BEE-761031E234F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE36BFA-C4C7-4DCD-8BEE-761031E234F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8EED95-F9F0-4148-A3D9-410A511E4AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8EED95-F9F0-4148-A3D9-410A511E4AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8EED95-F9F0-4148-A3D9-410A511E4AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8EED95-F9F0-4148-A3D9-410A511E4AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ECA3CF7E-1626-40B1-BB35-C0C903B2A158}
+	EndGlobalSection
+EndGlobal
